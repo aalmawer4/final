@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Check out Our Cozy Restaurant's delicious menu.">
+    <title>Menu - Our Cozy Restaurant</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="logo.png" alt="Restaurant Logo" style="width: 100px;">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="reservations.html">Reserve</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <h1>Our Menu</h1>
+        <p>Explore our wide selection of dishes, all made with fresh ingredients.</p>
+        <!-- Menu Table Example -->
+        <form id="orderForm">
+            <table>
+                <tr>
+                    <th>Select</th>
+                    <th>Dish</th>
+                    <th>Description</th>
+                    <th>Price</th>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="item" value="20"></td>
+                    <td>Grilled Salmon</td>
+                    <td>Fresh salmon with a garlic butter sauce</td>
+                    <td>$20</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="item" value="25"></td>
+                    <td>Steak</td>
+                    <td>Angus beef steak with house special seasoning</td>
+                    <td>$25</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="item" value="10"></td>
+                    <td>Caesar Salad</td>
+                    <td>Crisp romaine lettuce with Caesar dressing and croutons</td>
+                    <td>$10</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="item" value="15"></td>
+                    <td>Pasta Carbonara</td>
+                    <td>Rich and creamy spaghetti with pancetta</td>
+                    <td>$15</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="item" value="8"></td>
+                    <td>Tiramisu</td>
+                    <td>Classic Italian coffee-flavored dessert</td>
+                    <td>$8</td>
+                </tr>
+            </table>
+            <button type="button" onclick="calculateBill()">Calculate Bill</button>
+        </form>
+        <div class="bill-calculator">
+            <p class="total-bill">Total: $<span id="totalAmount">0</span></p>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <a href="mailto:aalmaweri4@hawkmail.hfcc.edu">Email Us</a> | <a href="https://www.restaurantdepot.com" target="_blank">Our Supplier</a>
+            <p>Copyright &copy; 2023 Our Cozy Restaurant</p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
